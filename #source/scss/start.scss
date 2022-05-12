@@ -1,0 +1,122 @@
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../../fonts/Gilroy-SemiBold.eot');
+  src: local('Gilroy SemiBold'), local('Gilroy-SemiBold'),
+  url('../../fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/Gilroy-SemiBold.woff') format('woff'),
+  url('../../fonts/Gilroy-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../../fonts/Gilroy-Regular.eot');
+  src: local('Gilroy Regular'), local('Gilroy-Regular'),
+  url('../../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/Gilroy-Regular.woff') format('woff'),
+  url('../../fonts/Gilroy-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../../fonts/Gilroy-Medium.eot');
+  src: local('Gilroy Medium'), local('Gilroy-Medium'),
+  url('../../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/Gilroy-Medium.woff') format('woff'),
+  url('../../fonts/Gilroy-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../../fonts/Gilroy-Bold.eot');
+  src: local('Gilroy Bold'), local('Gilroy-Bold'),
+  url('../../fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/Gilroy-Bold.woff') format('woff'),
+  url('../../fonts/Gilroy-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+$maxWidth: 1440;
+$maxWidthContainer: 1240;
+$ff: 'Gilroy';
+$md1: 991.98;
+$md2: 767.98;
+$md3: 479.98;
+
+$mainColor: #3A3A3A;
+$redColor: #E97171;
+$orangeColor: #E89F71;
+$grayColor: #898989;
+
+@import "NullMyCss.scss";
+body {
+  font-family: $ff, sans-serif;
+  color: $mainColor;
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+.container {
+  max-width: $maxWidthContainer + 30 + px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.ibg img {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+@import "ui.scss";
+@import "pop-up";
+@import "my.scss";
+@import "header.scss";
+@import "footer.scss";
+
+
+
+
+
+
+
+
+
+
+
+
+
